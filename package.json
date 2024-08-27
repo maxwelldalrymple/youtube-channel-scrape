@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "commander": "^12.1.0",
+    "csv-write-stream": "^2.0.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "puppeteer": "^23.1.1"
+  }
+}
