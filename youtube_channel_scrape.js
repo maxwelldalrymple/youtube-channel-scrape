@@ -20,7 +20,10 @@ if (!url) {
 const channelName = url.split("@")[1].split("/")[0].toLowerCase();
 const videoLimit = number || Infinity; // Default to no limit if not specified
 const clickPopular = popular === "true"; // Convert string to boolean
-const filePath = path.join(__dirname, `csv/${channelName}_youtube_videos.csv`);
+const filePath = path.join(
+  __dirname,
+  `exports/${channelName}_youtube_videos.csv`
+);
 
 (async () => {
   const browser = await puppeteer.launch({
